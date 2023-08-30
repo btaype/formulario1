@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    
+  }
+  #contenedor{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  #caja{
+    height: 120%;
+    width: 45%;
+    margin: 0px ;
+    border:1px solid black ;
+    
+  }
+  .caja1{
+    
+    
+    height: 15%;
+    width: 100%;
+    background:rgb(99,94,93);
+    
+
+  }
+ 
+  .imagen_1 {
+    height: 70%;
+    width: 50%;
+    border-radius:80%; 
+
+}
+  .imagen{
+    float: left;
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .caja_texto{
+    float: left;
+    width: 70%;
+    text-align: center;
+    
+    height: 100%;
+  }
+  #caja2{
+    float: left;
+    width: 30%; 
+    background: rgb(228, 221, 220);
+    padding-left: 18px;
+    height: 85%;
+   
+  }
+  #caja2 hr{
+    width: 88%;
+    height: 1px;
+    background:black;
+    margin-left: 1px;
+  }
+  #caja3{
+    width: 60%;
+    float: left;
+    padding-left:  18px;
+    
+
+  }
+
+  #caja3 hr{
+    width: 95%;
+    height: 1px;
+    background:black;
+    margin-left: 1px;
+  }

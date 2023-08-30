@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Curriculum_Vitae</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+  <div id="contenedor">
+  <div id="caja">
+    
+    <div class="caja1">
+      <div class="imagen">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE1y5koDv46FeMaXAqnOCFtsLDAu3VUfxY-pRyiZAiYOUY5n5pvYGQBDUJQLYfXEXHeBc&usqp=CAU" alt="" class="imagen_1">
+
+     </div>
+     <div class="caja_texto">
+      <h1 style="color:white ;font-size: 45px;">{{name}}</h1>
+      <h2 style="color:white ;font-size: 30px;">Puesto Ocupado/Buscado</h2>
+      </div>
+    </div>
+    <div id="caja2">
+    <h3>CONTACTO</h3>
+    <hr>
+    <p> 
+      {{telf}}<br>
+      {{email}}<br>
+      {{nacionalidad}}<br>
+      linkedin.com/jose-martinez<br>
+      {{fecha}}<br>
+    </p>
+    
+    <h3>IDIOMAS</h3>
+    <hr>
+    <p>
+      Español:Nativo<br>
+      Ingles:Bilingue(TOEIC 950)<br>
+      Frances:Intermedio(B2)<br>
+      programacion: {{lenguajes}}<br>
+    </P>
+
+    <h3>APTITUDES</h3>
+    <hr>
+    <ul>
+      <li>{{aptitudes}}</li>
+      
+    </ul>
+
+    <h3>HABILIDADES</h3>
+    <hr>
+    <ul>
+      <li>{{a_fisico}}</li>
+      <li>{{c_v_d}}</li>
+      <li>{{p_ofice}}</li>
+      <li>{{tenis}}</li>
+    </ul>
+
+    <h3>OTROS INTERESES</h3>
+    <hr>
+    <ul>
+      <li>Creador de yincanas</li>
+      <li>Paseos ecologicos grupales</li>
+      <li>Lectura grupal en ingles</li>
+    </ul>
+    
+  </div>
+  <div id="caja3">
+    <h3>PERFIL</h3>
+    <hr>
+    <p>{{texto}}</p>
+
+    <h3>EXPERIENCIA LABORAL</h3>
+    <hr>
+    <h4>Trabajdor Social</h4>
+    <h5><i>Mexico DF</i>,| 2022-Actualmente</h5>
+    <ul>
+      <li>Coordinador y mediador entro los equipos de ayuda psicologica a<br>jovenes y niños en exclusion social.</li>
+      <li>Velar por la salud mental del equipo y de miembros involucrados en<br>proyectos.</li>
+      <li>Mepeo de necesidades estrategicas y logicas para las diferentes areas.</li>
+      <li>Monitor de ejercicios fisicos para adolecentes.</li>
+      <li>Programar diferentes actividades extracurriculares en los involucrados.</li>
+    </ul>
+
+    <h4>Trabajdor Social</h4>
+    <h5>Mexico DF, | 2020-2022</h5>
+    <ul>
+      <li>Funciones para seguimientos de casos para jovenes con problemas de<br>adicciones.</li>
+      <li>Capacitaciones e integracion vinculadas a medias preventivas.</li>
+      <li>Recopilacion de evidencias para auditorias y programas sociales.</li>      
+    </ul>
+
+    <h4>Trabajdor Social(Practicas)</h4>
+    <h5><i>Zaragoza</i>, España | 2019-2020</h5>
+    <ul>
+      <li>Profesor de lengua española e inglesa para jovenes migrantes.</li>
+      <li>Monitor de actividades ecologicas con adolecentes.</li>
+      <li>Coordinador de areas deportivas.</li>      
+    </ul>  
+    
+    <h3>FORMACION</h3>
+    <hr>
+    <h4>Grado de Trabajo Social</h4>
+    <h5><i>ESMA</i>, Madrid | 2012-2015</h5>
+    <h4>Licenciatura Profesional</h4>
+    <h5><i>Universidad de la Frontera</i>, Mexico DF | 2011-2012</h5>
+  </div>
+  </div>
+  </div>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>Mi página de ejemplo</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style2.css')}}">
+		<script src="{{ url_for('static', filename='validaciones.js') }}"></script>
+	</head>
+	<body>
+	
+	<div id="contenedor">
+	<div id="fondo_1">
+	<h2>Formulario</h2>
+	<form action="{{url_for('hello')}}" method="post" name="form_action">
+		<h3>Nombre Completo</h3>
+		<input type="text" name="name" id="name1" class="pre" placeholder="" >
+		<br/>
+		<span id="nombre1"> </span>
+
+		<h3>Fecha de Naciento</h3>
+		<input type="date" id="fecha" class="pre" name="fecha" >
+		<br/>
+		<span id="fecha1"> </span>
+
+		<h3>Ocupacion</h3>
+		<input type="text" name="ocupacion" id="ocupacion1" class="pre"  placeholder=""  >
+		<br/>
+		<span id="ocupacion2"> </span>
+
+		<h3>Contacto</h3>
+		<input type="text" name="telf" id="numero" class="pre1" placeholder="telefono"  >
+		<input type="email" name="email" id="email1" class="pre1" placeholder="email"  >
+		<span id="email2"> </span>
+		<br>
+		<span id="numero1"> </span>
+		
+
+		<h3>Nacionalidad</h3>
+		<select id="nacion" class="pre" name="nacionalidad">
+			<option value="Peru">Peru</option>
+			<option value="Ecuador">Ecuador</option>
+			<option value="Chile">Chile</option>
+			<option value="Argentina">Argentina</option>
+			<option value="Otros">Otros</option>
+		</select>
+		
+
+		<h3>Ingles</h3>
+		<input type="radio" name="ingles" checked>basico
+		<input type="radio" name="ingles" checked>intermedio
+		<input type="radio" name="ingles" checked>avanzado
+		<input type="radio" name="ingles" checked>fluido
+
+		<h3>Lenguajes de programacion </h3>	
+		
+		<select id="skills" name="lenguajes" multiple>
+			<option value="c++">c++</option>
+			<option value="python">python</option>
+			<option value="c#">c#</option>
+			<option value="php">php</option>
+			<option value="java">java</option>
+			<option value="JavaScript">avaScript</option>
+		  </select>
+		
+
+		<input type="hidden" id="result" name="result1" value="">
+		<span id="skills1"> </span>
+		<h3>Aptitudes</h3>	
+		<input type="datalist" id="aptitudes" class="pre" name="aptitudes" list="aptitudes1">
+		<datalist id="aptitudes1">
+			<option value="Inteligencia emocional"></option>
+			<option value="Espiritu critico"></option>
+			<option value="Trabajo en equipo"></option>
+			<option value="Capacidad analitica"></option>
+			<option value="Habilidades fisicas"></option>
+		
+		</datalist>
+		<br/>
+		<span id="aptitudes1"> </span>
+		<h3>Habilidades</h3>
+		
+			<input type="checkbox" id="a_fisico" name="a_fisico" value="acondicionamiento fisico">
+			<label for="a_fisico">acondicionamiento fisico</label>
+			
+			<input type="checkbox" id="c_v_d" name="c_v_d" value="creacion video deportivos" >
+			<label for="creacion video deportivos">creacion video deportivos</label>
+			
+			<input type="checkbox" id="p_ofice" name="p_ofice" value="pack office">
+			<label for="pack office">pack office</label>
+			
+			<input type="checkbox" id="tenis" name="tenis" value="tenis" >
+			<label for="tenis">tenis</label>
+			<br>
+			<span id="habilidad"> </span>
+		<h3></h3>
+		
+	
+		<h3>Perfil</h3>
+		<textarea id="texto1" class="pre2" name="texto1" rows="4" cols="25"></textarea>
+		<br/>
+		<span id="texto2"></span>
+		<br/>
+		<h3>Experiencia laboral</h3>
+		<input type="text" id="laboral2" name="laboral2"  class="pre3" placeholder="" required>
+		<input type="button" onclick="exten()" value="+" >
+		<div id="dinamic"></div>
+		<br/>
+		
+		<span id="laboral3"></span>
+		<br/>
+		<input type="button" class="bot" onclick="validar()" value="Enviar">
+	</form>
+</div>
+</div>
+</body>	
+</html>
